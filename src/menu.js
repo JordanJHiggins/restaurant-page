@@ -1,11 +1,8 @@
 import { content } from "./index";
 
-export function renderMenu() {
-  const menuPage = document.createElement("div");
-  const menuGrid = document.createElement("div");
-}
+const menuGrid = document.createElement("div");
 
-export function createGrid() {
+(function createGrid() {
   const menuItems = [
     "dish1",
     "dish2",
@@ -23,6 +20,20 @@ export function createGrid() {
     dish.classList.add(`${menuItems[i]}`);
     dish.innerHTML = `${menuItems[i]}`;
 
-    content.appendChild(dish);
+    menuGrid.appendChild(dish);
   }
+})();
+// createGrid();
+
+export function renderMenu() {
+  const menuPage = document.createElement("div");
+  const menuTitle = document.createElement("h2");
+  // const menuGrid = document.createElement("div");
+
+  menuTitle.innerHTML = "Menu";
+
+  menuGrid.classList.add("grid");
+  content.appendChild(menuPage);
+  menuPage.appendChild(menuTitle);
+  menuPage.appendChild(menuGrid);
 }
