@@ -8,7 +8,6 @@ body {
   background-color: #fef3c7;
 }
 /* Nav bar */
-
 #nav-bar {
   color: #1e40af;
   font-size: 1.2rem;
@@ -19,31 +18,42 @@ body {
   cursor: pointer;
 }
 
+a:hover {
+  opacity: 0.7;
+}
+
 #content {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
   max-height: 75vh;
 }
 
 /* Home page */
-.home-button {
-}
-
 .home-page {
-  background-color: #2563eb;
+  background-color: rgb(37, 99, 235, 0.3);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 15px;
   min-height: 75vh;
+  width: 75vw;
 }
 
 /* Menu page */
 
 .menu-page {
-  background-color: #2563eb;
+  background-color: rgb(37, 99, 235, 0.3);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 15px;
   min-height: 75vh;
+  width: 75vw;
 }
 
 /* Contact page */
 
 .contact-page {
-  background-color: #2563eb;
+  background-color: rgb(37, 99, 235, 0.3);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 15px;
   min-height: 75vh;
+  width: 75vw;
 }
