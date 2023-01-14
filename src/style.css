@@ -11,18 +11,17 @@ body {
   color: #1e40af;
   font-size: 1.2rem;
   display: flex;
-
   align-items: center;
   justify-content: center;
   flex-shrink: 1;
   gap: 0.5rem;
-  padding: 2rem 3rem;
-  cursor: pointer;
+  padding: 2rem 3rem 0rem 0rem;
 }
 
 .title {
   font-size: 6vw;
   font-family: "Sacramento";
+  margin: 0;
 }
 
 .logo {
@@ -31,6 +30,7 @@ body {
 
 a {
   padding-left: 2rem;
+  cursor: pointer;
 }
 a:hover {
   opacity: 0.7;
@@ -58,11 +58,16 @@ a:hover {
   width: 75vw;
 }
 
+.diningroom-photo {
+  height: 45vh;
+  width: 45vw;
+  border-radius: 15px;
+}
 /* Home page */
-
 .home-text {
-  font-size: 2.7vw;
-  padding: 1rem 3.5rem 0rem 3.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem 3.5rem 1rem 3.5rem;
 }
 
 /* Menu page */
