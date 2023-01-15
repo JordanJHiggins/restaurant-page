@@ -35,6 +35,7 @@ a {
 }
 a:hover {
   opacity: 0.7;
+  text-decoration: underline;
 }
 
 #content {
@@ -46,6 +47,7 @@ a:hover {
 
 /* Home page */
 .home-page,
+.menu-page,
 .contact-page {
   display: flex;
   flex-direction: column;
@@ -54,8 +56,6 @@ a:hover {
   background-color: rgb(37, 99, 235, 0.2);
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 15px;
-  min-height: 75vh;
-  width: 75vw;
 }
 
 .diningroom-photo {
@@ -70,15 +70,13 @@ a:hover {
   padding: 1rem 3.5rem 1rem 3.5rem;
 }
 
+.home-page {
+  min-height: 75vh;
+  width: 75vw;
+}
+
 /* Menu page */
 .menu-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #2563eb;
-  background-color: rgb(37, 99, 235, 0.2);
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  border-radius: 15px;
   min-height: 40vh;
   width: 75vw;
 }
@@ -93,4 +91,33 @@ a:hover {
 
 .dish {
   background-color: aqua;
+}
+
+/* Contact page */
+
+.contact-page {
+  font-size: 1rem;
+  min-height: 40vh;
+  width: 45vw;
+}
+
+.name-input,
+.email-input {
+  height: 2.5vh;
+  width: 20vw;
+}
+
+.message-input {
+  resize: vertical;
+  width: 25vw;
+  max-height: 200px;
+}
+
+.submit-button {
+  padding-bottom: 1rem;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
