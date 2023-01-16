@@ -12,11 +12,11 @@ body {
   color: #1e40af;
   font-size: 1.2rem;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   flex-shrink: 1;
   gap: 0.5rem;
-  /* padding: 2rem 3rem 0rem 0rem; */
 }
 
 .title {
@@ -42,7 +42,7 @@ a:hover {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
-  max-height: 75vh;
+  /* max-height: 75vh; */
   /* padding-bottom: 2rem; */
 }
 
@@ -60,8 +60,9 @@ a:hover {
 }
 
 .diningroom-photo {
-  max-inline-size: 100%;
-  block-size: 80%;
+  max-width: 80%;
+  max-height: 100%;
+  padding: 0rem 0rem 3rem 0rem;
 }
 
 /* Home page */
@@ -73,19 +74,23 @@ a:hover {
 }
 
 .home-page {
-  /* display: flex; */
+  display: flex;
   flex-direction: row;
   justify-content: center;
-  min-height: 75vh;
-  width: 70vw;
-  /* padding-bottom: 2rem; */
+  flex-wrap: wrap;
+  height: 100%;
+  width: 70%;
+  margin-bottom: 2rem;
 }
 
 /* Menu page */
 .menu-page {
+  display: flex;
+  flex-wrap: wrap;
   min-height: 40vh;
   width: 60vw;
-  padding-bottom: 2rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
 }
 
 .grid {
@@ -103,10 +108,12 @@ a:hover {
 /* Contact page */
 
 .contact-page {
+  display: flex;
+  flex-wrap: wrap;
   font-size: 1rem;
   min-height: 40vh;
   width: 40vw;
-  padding-bottom: 2rem;
+  padding: 3rem;
 }
 
 .name-input,
