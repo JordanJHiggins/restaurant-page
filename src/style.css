@@ -16,7 +16,7 @@ body {
   justify-content: center;
   flex-shrink: 1;
   gap: 0.5rem;
-  padding: 2rem 3rem 0rem 0rem;
+  /* padding: 2rem 3rem 0rem 0rem; */
 }
 
 .title {
@@ -59,20 +59,26 @@ a:hover {
 }
 
 .diningroom-photo {
-  height: 45vh;
-  width: 45vw;
-  border-radius: 15px;
+  max-inline-size: 100%;
+  block-size: 80%;
+  padding: 1rem;
 }
+
 /* Home page */
 .home-text {
   text-align: center;
   font-size: 1.5rem;
   padding: 1rem 3.5rem 1rem 3.5rem;
+  max-width: 25vw;
 }
 
 .home-page {
-  min-height: 75vh;
+  /* display: flex; */
+  flex-direction: row;
+  justify-content: center;
+  min-height: 85vh;
   width: 75vw;
+  margin-bottom: 2rem;
 }
 
 /* Menu page */
