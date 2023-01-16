@@ -2,17 +2,17 @@ import { content } from "./index";
 
 export const menuPage = document.createElement("div");
 
-const menuGrid = document.createElement("div");
-const menuTitle = document.createElement("h2");
-
-const dish1 = document.createElement("p");
-const dish2 = document.createElement("p");
-const dish3 = document.createElement("p");
-const dish4 = document.createElement("p");
-const dish5 = document.createElement("p");
-const dish6 = document.createElement("p");
-
 export function renderMenu() {
+  const menuGrid = document.createElement("div");
+  const menuTitle = document.createElement("h2");
+
+  const dish1 = document.createElement("p");
+  const dish2 = document.createElement("p");
+  const dish3 = document.createElement("p");
+  const dish4 = document.createElement("p");
+  const dish5 = document.createElement("p");
+  const dish6 = document.createElement("p");
+
   menuGrid.classList.add("grid");
   menuPage.classList.add("menu-page");
 

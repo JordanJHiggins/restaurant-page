@@ -8,6 +8,8 @@ const diningRoom = document.createElement("img");
 diningRoom.src = diningRoomPhoto;
 
 export function renderHome() {
+  diningRoom.src = diningRoomPhoto;
+
   homePage.classList.add("home-page");
   diningRoom.classList.add("diningroom-photo");
   homeText.classList.add("home-text");
@@ -19,6 +21,4 @@ export function renderHome() {
   content.appendChild(homePage);
   homePage.appendChild(homeText);
   homePage.appendChild(diningRoom);
-
-  console.log("binggg");
 }
