@@ -43,6 +43,7 @@ a:hover {
   justify-content: center;
   margin-top: 2rem;
   max-height: 75vh;
+  /* padding-bottom: 2rem; */
 }
 
 /* Home page */
@@ -61,7 +62,6 @@ a:hover {
 .diningroom-photo {
   max-inline-size: 100%;
   block-size: 80%;
-  padding: 1rem;
 }
 
 /* Home page */
@@ -76,15 +76,16 @@ a:hover {
   /* display: flex; */
   flex-direction: row;
   justify-content: center;
-  min-height: 85vh;
-  width: 75vw;
-  margin-bottom: 2rem;
+  min-height: 75vh;
+  width: 70vw;
+  /* padding-bottom: 2rem; */
 }
 
 /* Menu page */
 .menu-page {
   min-height: 40vh;
-  width: 75vw;
+  width: 60vw;
+  padding-bottom: 2rem;
 }
 
 .grid {
@@ -104,7 +105,8 @@ a:hover {
 .contact-page {
   font-size: 1rem;
   min-height: 40vh;
-  width: 45vw;
+  width: 40vw;
+  padding-bottom: 2rem;
 }
 
 .name-input,
