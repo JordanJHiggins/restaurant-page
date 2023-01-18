@@ -1,40 +1,55 @@
-import { renderHome, homePage } from "./home";
-import { renderMenu, menuPage } from "./menu";
-import { renderContact, contactPage } from "./contact";
+import { renderHome } from "./home";
+import { renderMenu } from "./menu";
+import { renderContact } from "./contact";
 import "./style.css";
 import logo from "./imgs/logo.svg";
 
 export const content = document.getElementById("content");
-const nav = document.getElementById("nav-bar");
+// const nav = document.getElementById("nav-bar");
 
-const homeButton = document.createElement("a");
-const menuButton = document.createElement("a");
-const contactButton = document.createElement("a");
-const title = document.createElement("h1");
-const logoContainer = document.createElement("img");
+// const homeButton = document.createElement("a");
+// const menuButton = document.createElement("a");
+// const contactButton = document.createElement("a");
 
-logoContainer.src = logo;
-logoContainer.classList.add("logo");
+// const title = document.createElement("h1");
+// const logoContainer = document.createElement("img");
+
+// logoContainer.src = logo;
+// logoContainer.classList.add("logo");
 
 function renderNav() {
-  homeButton.innerText = "Home";
-  menuButton.innerText = "Menu";
-  contactButton.innerText = "Contact";
-  title.innerText = "Barry's";
+  const nav = document.getElementById("nav-bar");
 
+  const homeButton = document.createElement("a");
+  homeButton.innerText = "Home";
   homeButton.classList.add("home-button");
+
+  const menuButton = document.createElement("a");
+  menuButton.innerText = "Menu";
   menuButton.classList.add("menu-button");
+
+  const contactButton = document.createElement("a");
+  contactButton.innerText = "Contact";
   contactButton.classList.add("contact-button");
+
+  const title = document.createElement("h1");
+  title.innerText = "Barry's";
   title.classList.add("title");
+
+  const logoContainer = document.createElement("img");
+  logoContainer.src = logo;
+  logoContainer.classList.add("logo");
 
   nav.appendChild(logoContainer);
   nav.appendChild(title);
   nav.appendChild(homeButton);
   nav.appendChild(menuButton);
   nav.appendChild(contactButton);
+
+  switchTab(nav, homeButton, menuButton, contactButton);
 }
 
-function switchTab() {
+function switchTab(nav, homeButton, menuButton, contactButton) {
   let navButtons = nav.querySelectorAll("a");
 
   navButtons.forEach((button) => {
@@ -56,4 +71,3 @@ function clearContent() {
 
 renderNav();
 renderHome();
-switchTab();
