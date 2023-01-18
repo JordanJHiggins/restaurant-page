@@ -1,10 +1,11 @@
 import { content } from "./index";
 
-export const contactPage = document.createElement("div");
-contactPage.classList.add("contact-page");
-
 export function renderContact() {
-  const card = document.createElement("div");
+  const contactPage = document.createElement("div");
+  contactPage.classList.add("contact-page");
+
+  const contactCard = document.createElement("div");
+  contactCard.classList.add("contact-card");
 
   const contactTitle = document.createElement("h2");
   contactTitle.innerText = "Barry's Restaurant";
@@ -26,13 +27,14 @@ export function renderContact() {
   nameInput.required = true;
 
   const email = document.createElement("p");
+  email.innerText = " Barrys@restaurant.com";
+
   const emailLabel = document.createElement("label");
   const emailInput = document.createElement("input");
   emailLabel.innerText = "Email";
   emailInput.classList.add("email-input");
   emailInput.setAttribute("type", "email");
   emailInput.required = true;
-  email.innerText = " Barrys@restaurant.com";
 
   const messageLabel = document.createElement("label");
   const messageInput = document.createElement("textarea");
@@ -46,13 +48,13 @@ export function renderContact() {
 
   content.appendChild(contactPage);
 
-  contactPage.appendChild(card);
+  contactPage.appendChild(contactCard);
   contactPage.appendChild(inputContainer);
 
-  card.appendChild(contactTitle);
-  card.appendChild(address);
-  card.appendChild(phone);
-  card.appendChild(email);
+  contactCard.appendChild(contactTitle);
+  contactCard.appendChild(address);
+  contactCard.appendChild(phone);
+  contactCard.appendChild(email);
 
   createForm(inputContainer, nameLabel);
   createForm(inputContainer, nameInput);
