@@ -2,12 +2,12 @@ import { content } from "./index";
 
 export function renderMenu() {
   const menuPage = document.createElement("div");
-  const menuGrid = document.createElement("div");
-  const menuTitle = document.createElement("h2");
-
-  menuGrid.classList.add("grid");
   menuPage.classList.add("menu-page");
 
+  const menuGrid = document.createElement("div");
+  menuGrid.classList.add("grid");
+
+  const menuTitle = document.createElement("h2");
   menuTitle.innerText = "Menu";
 
   createMenuItem(

@@ -5,17 +5,6 @@ import "./style.css";
 import logo from "./imgs/logo.svg";
 
 export const content = document.getElementById("content");
-// const nav = document.getElementById("nav-bar");
-
-// const homeButton = document.createElement("a");
-// const menuButton = document.createElement("a");
-// const contactButton = document.createElement("a");
-
-// const title = document.createElement("h1");
-// const logoContainer = document.createElement("img");
-
-// logoContainer.src = logo;
-// logoContainer.classList.add("logo");
 
 function renderNav() {
   const nav = document.getElementById("nav-bar");

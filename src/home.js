@@ -15,8 +15,7 @@ export function renderHome() {
   homeText.classList.add("home-text");
 
   homeText.textContent = `We're a family owned, casual dining restaurant, focused on bring the best experience in food and drink to our guests. 
-  
-  Our food is centered around local ingredients, as a result our menu is ever changing. Please checkout our most current menu on this site.`;
+  `;
 
   content.appendChild(homePage);
   homePage.appendChild(homeText);
